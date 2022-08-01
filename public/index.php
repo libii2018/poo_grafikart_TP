@@ -6,4 +6,5 @@ App\Autoloader::register();
 
 $app = App\Ap::getInstance();
 
-var_dump($app->getTable('Posts'));
+$posts = $app->getTable('Posts');
+var_dump($posts->all());
