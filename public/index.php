@@ -4,4 +4,6 @@ require '../app/Autoloader.php';
 
 App\Autoloader::register();
 
-$config = App\Config::getInstance();
+$app = App\Ap::getInstance();
+
+var_dump($app->getTable('Posts'));
