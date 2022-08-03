@@ -12,11 +12,6 @@ if(isset($_GET['p'])) {
 }
 
 // Auth
-$app = Ap::getInstance();
-$auth = new \Core\Auth\DBAuth($app->getDb());
-if (!$auth->logged()) {
-    $app->forbidden();
-}
 
 ob_start();
 if($page === 'home') {
